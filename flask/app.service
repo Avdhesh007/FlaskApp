@@ -1,0 +1,10 @@
+[program:spleeter]
+directory=/app
+command=/env/bin/gunicorn sp:app --config /app/gunicorn.conf.py
+user=ubuntu
+autostart=true
+autorestart=true
+stopasgroup=true
+killasgroup=true
+stderr_logfile=var/log/spleeter/spleeter.err.log
+stdout_logfile=var/log/spleeter/spleeter.out.log
