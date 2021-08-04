@@ -14,4 +14,4 @@ RUN pip install -r requirements.txt
 
 #CMD ["uwsgi", 'app.ini']
 #CMD ["gunicorn", "-w", " 2 run:app"]
-CMD ["systemctl","start","app"]
+CMD ["systemctl","start app"]
