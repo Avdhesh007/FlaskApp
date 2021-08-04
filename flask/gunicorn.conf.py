@@ -1,6 +1,6 @@
 proc_name = "gunicorn"
 workers = 4
-bind = ['127.0.0.1:5000']
+bind = ['0.0.0.0:5000']
 errolog = "/app/spleeter.gunicorn.error"
 acesslog = "/app/spleeter.gunicorn.access"
 loglevel = "debug"
