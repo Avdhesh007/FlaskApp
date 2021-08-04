@@ -1,1 +1,4 @@
-/flask/env
+.git
+.vscode
+.gitignore
+flask/env

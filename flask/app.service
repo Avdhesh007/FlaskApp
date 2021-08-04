@@ -1,6 +1,6 @@
 [program:spleeter]
 directory=/app
-command=/env/bin/gunicorn sp:app --config /app/gunicorn.conf.py
+command=/env/bin/gunicorn run:app --config /app/gunicorn.conf.py
 user=ubuntu
 autostart=true
 autorestart=true
